@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Boids Simulation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="boidsCanvas"></canvas>
+    
+    <div class="glass-panel">
+        <h2>Boids Settings</h2>
+        
+        <div class="control-group">
+            <label for="randomWeight">Random force weight:</label>
+            <input type="range" id="randomWeight" min="0" max="1" step="0.01" value="0.2">
+            <span class="value" id="randomWeightVal">0.2</span>
+        </div>
+        <div class="control-group">
+            <label for="perceptionRadius">Perception Radius:</label>
+            <input type="range" id="perceptionRadius" min="10" max="200" step="1" value="50">
+            <span class="value" id="perceptionRadiusVal">50</span>
+        </div>
+        <div class="control-group">
+            <label for="alignment">Alignment:</label>
+            <input type="range" id="alignment" min="0" max="3" step="0.1" value="1.0">
+            <span class="value" id="alignmentVal">1.0</span>
+        </div>
+        <div class="control-group">
+            <label for="cohesion">Cohesion:</label>
+            <input type="range" id="cohesion" min="0" max="3" step="0.1" value="1.0">
+            <span class="value" id="cohesionVal">1.0</span>
+        </div>
+        <div class="control-group">
+            <label for="separation">Separation:</label>
+            <input type="range" id="separation" min="0" max="3" step="0.1" value="1.5">
+            <span class="value" id="separationVal">1.5</span>
+        </div>
+    </div>
+
+    <div class="watermark">by Lonath G.</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
